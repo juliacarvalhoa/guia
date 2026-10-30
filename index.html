@@ -103,6 +103,14 @@ footer .logo{color:var(--musgo);width:5.25rem}
 .contato a{color:var(--musgo);font-weight:700}
 body{margin:0}
 img{max-width:100%}
+
+@media(min-width:768px){
+  .intro p{max-width:none}
+  footer{display:grid;grid-template-columns:1fr auto;column-gap:3rem;row-gap:1.25rem;align-items:center}
+  .aviso-legal{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+  .aviso-legal p,footer > p{max-width:none}
+  footer .logo{justify-self:end}
+}
 </style>
 </head>
 <body>
